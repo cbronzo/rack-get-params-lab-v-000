@@ -25,12 +25,10 @@ class Application
       end
       
     end
-  end
-end
+  
+
       
-      
-     
-     
+
       @@items.each do |item|
         resp.write "#{item}\n"
       end
