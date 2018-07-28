@@ -16,10 +16,10 @@ class Application
         end
       end
     if req.path.match(/add/)
-      items_to_be_added = req.params["item"]
-      if @@items.include?(items_to_be_added)
+      items_to_add = req.params["item"]
+      if @@items.include?(items_add)
         @@cart << items_to_be_added
-        resp.write "added #{items_to_be_added}"
+        resp.write "added #{items_to_add}"
       else
         resp.write "We don't have that item"
       end
