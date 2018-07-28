@@ -8,7 +8,7 @@ class Application
     req = Rack::Request.new(env)
     
     
-    
+    @@items.each do |item|
     
     if req.path.match(/cart/)
       if @@cart.empty?
