@@ -14,6 +14,7 @@ class Application
         @@cart.each do |cart|
           resp.write "#{cart}\n"
       end
+    end
 
     
     
