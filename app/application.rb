@@ -15,7 +15,7 @@ class Application
           resp.write "#{cart}\n"
         end
       end
-    if req.path.match(/items/)
+    if req.path.match(/add/)
       @@items.each do |item|
         resp.write "#{item}\n"
       end
