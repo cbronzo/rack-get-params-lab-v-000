@@ -13,8 +13,8 @@ class Application
       else
         @@cart.each do |cart|
           resp.write "#{cart}\n"
+        end
       end
-    end
 
     
     
