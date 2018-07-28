@@ -17,7 +17,7 @@ class Application
       end
     if req.path.match(/add/)
       items_to_add = req.params["item"]
-      if @@items.include?(items_add)
+      if @@items.include?(items_to_add)
         @@cart << items_to_add
         resp.write "added #{items_to_add}"
       else
